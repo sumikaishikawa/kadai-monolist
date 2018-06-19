@@ -68,9 +68,10 @@ footer {
 .item .buttons form {
     display: inline-block;
     margin: 0 5px;
+    text-align: center;
 }
 
-p.item-title {
+.item-title {
     /* Keep the number of lines in a sentence on two lines, and add "..." to the end of line. */
     display: -webkit-box;
     -webkit-box-orient: vertical;
