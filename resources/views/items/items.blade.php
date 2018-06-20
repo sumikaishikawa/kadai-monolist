@@ -20,12 +20,12 @@
                                 @endif
                             </div>
                         </div>
-                       @if (isset($item->count))
+                       @if (isset($item->count)  && $type == 'want')
                             <div class="panel-footer">
                                 <p class="text-center">{{ $key+1 }}位: {{ App\Item::find($item->id)->count_want()}} Wants</p>
                             </div>
                         @endif
-                        @if (isset($item->count))
+                        @if (isset($item->count)  && $type == 'have')
                             <div class="panel-footer">
                                 <p class="text-center">{{ $key+1 }}位:  {{ App\Item::find($item->id)->count_have()}} Haves</p>
                             </div>
