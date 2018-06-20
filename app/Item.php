@@ -22,4 +22,12 @@ class Item extends Model
     {
         return $this->users()->where('type', 'have');
     }
+    
+    public function count_want() {
+        return $this->want_users()->count();
+    }
+
+     public function count_have() {
+        return $this->have_users()->count();
+    }
 }
